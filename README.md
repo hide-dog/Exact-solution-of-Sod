@@ -8,3 +8,6 @@ tを決めることで，その時刻の解を求めてくれます．
 ・continuous solution.py  
 tとdtを決めることで，時間履歴を計算してくれます．
 ただし，全ての時刻の画像ファイルが出力されるので，値が欲しい場合は適当に改変して使用してください．
+
+
+This software is released under the MIT License, see LICENSE.
