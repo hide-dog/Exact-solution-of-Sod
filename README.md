@@ -1,7 +1,7 @@
 # Exact-solution-of-Sod
 Sodの衝撃波管の厳密解になります．
 
-・single solution.py
+・single solution.py // \\
 tを決めることで，その時刻の解を求めてくれます．
 ただし，その時刻の画像ファイルと値が出力されます．
 
