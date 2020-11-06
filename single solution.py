@@ -160,8 +160,22 @@ def main():
     pyplot.savefig(pic_name)
     pyplot.clf()
 
+    output(x, rho, u, p)
+
+def output(x, rho, u, p):
+    outlist=["x[m], rho[kg/m3], u[m], p[Pa]"]
+    
+    for i in range(nx):
+        temp =              '{:.07f}'.format(  x[i])
+        temp = temp + " " + '{:.07f}'.format(rho[i])
+        temp = temp + " " + '{:.07f}'.format(  u[i])
+        temp = temp + " " + '{:.07f}'.format(  p[i])
+        
+        outlist.append(temp)
+    outlist='\n'.join(outlist)
+
+    with open("exsolution_of_sod",'wt') as f:
+        f.write(outlist)
+
 # main
 main()
-
-
-
